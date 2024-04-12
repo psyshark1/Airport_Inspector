@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GraphWindow</class>
+ <widget class="QDialog" name="GraphWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1301</width>
+    <height>425</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graphic</string>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="0" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Месяц</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QComboBox" name="comboBox">
+         <item>
+          <property name="text">
+           <string>Январь 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Февраль 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Март 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Апрель 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Май 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Июнь 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Июль 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Август 2017</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Сентябрь 2016</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Октябрь 2016</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Ноябрь 2016</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Декабрь 2016</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCustomPlot" name="qcp_month" native="true"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Год</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QCustomPlot" name="qcp_year" native="true"/>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QPushButton" name="pb_close">
+     <property name="text">
+      <string>Закрыть</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
